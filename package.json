@@ -1,0 +1,8 @@
+{
+  "name": "capstone",
+  "version": "0.0.1",
+  "author": "Krishna",
+  "dependencies": {
+    "mysql": "2.x.x"
+  }
+}

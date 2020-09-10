@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+        name: capvision
+spec:
+  replicas: 2
+  selector:
+          matchLabels:
+                  app: capvision
+  template:
+    metadata:
+      labels:
+        app: capvision
+    spec:
+      containers:
+      - image: mvrkrishna/capvision
+        name: capvision
+        imagePullPolicy: Always          
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"       
+        ports:
+        - containerPort: 8080
+      restartPolicy: Always
+
+

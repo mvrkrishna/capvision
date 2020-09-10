@@ -1,0 +1,14 @@
+<form name="generatelabel">
+  <button type="submit"> Generate Labels</button> 
+</form>
+
+
+
+<script>
+const form = document.forms['generatelabel']
+const scriptURL = "https://script.google.com/macros/s/AKfycbxtoFtvCWJUwABdYuJEQ4BnTxf09Lp2lwmzR4vpVNuO7bZ3Zag/exec";
+form.addEventListener('submit', e => {
+    e.preventDefault();  
+    fetch(scriptURL);
+})
+</script>
