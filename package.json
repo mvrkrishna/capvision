@@ -1,8 +1,13 @@
 {
-  "name": "capstone",
+  "name": "capstone-image-vision",
   "version": "0.0.1",
-  "author": "Krishna",
+  "author": "Krishna V. R. Muppavarapu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "mysql": "2.x.x"
+    "mysql": "2.x.x",
+    "express": "^4.16.1"
   }
 }
